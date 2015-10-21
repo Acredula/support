@@ -1,6 +1,6 @@
 # Hms Support
 
-A collection of ServiceProviders to speed up application setup.
+Support package providing commonly used packages via service providers and inflectors.
 
 All ServiceProviders require [league/container 2](https://packagist.org/packages/league/container#2.0.3).
 
