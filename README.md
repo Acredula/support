@@ -1,5 +1,8 @@
 # Acredula\Support
 
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+[![Total Downloads](https://img.shields.io/packagist/dt/acredula/support.svg?style=flat-square)](https://packagist.org/packages/acredula/support)
+
 Support package providing commonly used packages via service providers and inflectors.
 
 All Service Providers require [league/container](https://packagist.org/packages/league/container) >=2.*.
