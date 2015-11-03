@@ -11,7 +11,7 @@
         "josegonzalez/dotenv": "^1.0",
         "league/container": "^2.0",
         "swiftmailer/swiftmailer": "^5.4",
-        "twig/twig": "^1.22"
+        "twig/twig": "^1.23"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8"
