@@ -53,7 +53,7 @@ class ConfigServiceProvider extends AbstractServiceProvider implements BootableS
         $this->getContainer()->share('app.config', function() {
             if (! file_exists($this->config['path'])) {
                 throw new FileDoesNotExistException(
-                    'Config file [%s] could not be found', sprintf($this->config['path'])
+                    sprintf('Config file [%s] could not be found', $this->config['path'])
                 );
             }
 
@@ -61,7 +61,7 @@ class ConfigServiceProvider extends AbstractServiceProvider implements BootableS
 
             if (! is_array($config)) {
                 throw new FileDoesNotReturnArrayException(
-                    'Config [%s] must return an array', sprintf($this->config['path'])
+                    sprintf('Config [%s] must return an array', $this->config['path'])
                 );
             }
 
@@ -78,7 +78,7 @@ class ConfigServiceProvider extends AbstractServiceProvider implements BootableS
     {
         if (! file_exists($envFile)) {
             throw new FileDoesNotExistException(
-                'The .env file [%s] could not be found', sprintf($envFile)
+                sprintf('The .env file [%s] could not be found', $envFile)
             );
         }
 
