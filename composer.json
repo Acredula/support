@@ -1,14 +1,15 @@
 {
-    "name": "hms/support",
+    "name": "acredula/support",
     "description": "Support package providing commonly used packages via service providers and inflectors.",
+    "license": "MIT",
     "require": {
+        "php": ">=5.4.0",
         "aura/session": "^2.0",
         "aura/sql": "^2.4",
         "aura/sqlquery": "^2.5",
         "gorka/dot-notation-access": "^1.0",
         "josegonzalez/dotenv": "^1.0",
         "league/container": "^2.0",
-        "php": ">=5.4.0",
         "swiftmailer/swiftmailer": "^5.4",
         "twig/twig": "^1.22"
     },
@@ -17,8 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Hms\\Support\\": "src/",
-            "Hms\\Support\\Test\\": "tests"
+            "Acredula\\Support\\": "src/"
         }
     }
 }

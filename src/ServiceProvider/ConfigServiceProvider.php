@@ -1,10 +1,10 @@
 <?php
 
-namespace Hms\Support\ServiceProvider;
+namespace Acredula\Support\ServiceProvider;
 
+use Acredula\Support\Exception\FileDoesNotExistException;
+use Acredula\Support\Exception\FileDoesNotReturnArrayException;
 use Gorka\DotNotationAccess\DotNotationAccessArray;
-use Hms\Support\Exception\FileDoesNotExistException;
-use Hms\Support\Exception\FileDoesNotReturnArrayException;
 use josegonzalez\Dotenv\Loader;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Container\ServiceProvider\BootableServiceProviderInterface;
@@ -39,7 +39,7 @@ class ConfigServiceProvider extends AbstractServiceProvider implements BootableS
     public function boot()
     {
         $this->getContainer()
-             ->inflector('Hms\Support\Contract\ConfigAwareInterface')
+             ->inflector('Acredula\Support\Contract\ConfigAwareInterface')
              ->invokeMethod('setConfig', ['app.config']);
     }
 

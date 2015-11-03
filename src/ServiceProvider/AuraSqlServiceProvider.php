@@ -1,6 +1,6 @@
 <?php
 
-namespace Hms\Support\ServiceProvider;
+namespace Acredula\Support\ServiceProvider;
 
 use Aura\Sql\ExtendedPdo;
 use Aura\SqlQuery\QueryFactory;
@@ -40,7 +40,7 @@ class AuraSqlServiceProvider extends AbstractServiceProvider implements Bootable
     public function boot()
     {
         $this->getContainer()
-             ->inflector('Hms\Support\Contract\AuraSqlAwareInterface')
+             ->inflector('Acredula\Support\Contract\AuraSqlAwareInterface')
              ->invokeMethod('setSqlDriver', ['Aura\Sql\ExtendedPdo'])
              ->invokeMethod('setSqlQueryBuilder', ['Aura\SqlQuery\QueryFactory']);
     }

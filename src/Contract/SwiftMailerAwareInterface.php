@@ -1,6 +1,6 @@
 <?php
 
-namespace Hms\Support\Contract;
+namespace Acredula\Support\Contract;
 
 use Swift_Mailer;
 use Swift_Message;

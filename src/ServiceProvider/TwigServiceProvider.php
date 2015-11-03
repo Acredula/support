@@ -1,6 +1,6 @@
 <?php
 
-namespace Hms\Support\ServiceProvider;
+namespace Acredula\Support\ServiceProvider;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Container\ServiceProvider\BootableServiceProviderInterface;
@@ -33,7 +33,7 @@ class TwigServiceProvider extends AbstractServiceProvider implements BootableSer
     public function boot()
     {
         $this->getContainer()
-             ->inflector('Hms\Support\Contract\TwigAwareInterface')
+             ->inflector('Acredula\Support\Contract\TwigAwareInterface')
              ->invokeMethod('setTemplateDriver', ['Twig_Environment']);
     }
 
