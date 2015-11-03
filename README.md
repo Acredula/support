@@ -2,7 +2,7 @@
 
 Support package providing commonly used packages via service providers and inflectors.
 
-All Service Providers require [league/container](https://packagist.org/packages/league/container#2.0.3) >=2.0.3.
+All Service Providers require [league/container](https://packagist.org/packages/league/container) >=2.*.
 
 ### ConfigServiceProvider
 
