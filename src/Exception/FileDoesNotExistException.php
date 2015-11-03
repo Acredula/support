@@ -1,6 +1,6 @@
 <?php
 
-namespace Hms\Support\Exception;
+namespace Acredula\Support\Exception;
 
 class FileDoesNotExistException extends HmsSupportException
 {

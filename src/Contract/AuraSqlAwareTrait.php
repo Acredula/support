@@ -1,6 +1,6 @@
 <?php
 
-namespace Hms\Support\Contract;
+namespace Acredula\Support\Contract;
 
 use Aura\Sql\ExtendedPdo;
 use Aura\SqlQuery\QueryFactory;

@@ -10,7 +10,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="HMSWeb Support Test Suite">
+        <testsuite name="Acredula\Support Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

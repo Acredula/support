@@ -1,6 +1,6 @@
 <?php
 
-namespace Hms\Support\ServiceProvider;
+namespace Acredula\Support\ServiceProvider;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Container\ServiceProvider\BootableServiceProviderInterface;
@@ -24,7 +24,7 @@ class SwiftMailerServiceProvider extends AbstractServiceProvider implements Boot
     public function boot()
     {
         $this->getContainer()
-             ->inflector('Hms\Support\Contract\SwiftMailerAwareInterface')
+             ->inflector('Acredula\Support\Contract\SwiftMailerAwareInterface')
              ->invokeMethod('setEmailDriver', ['Swift_Mailer'])
              ->invokeMethod('setMessageBuilder', ['Swift_Message']);
     }

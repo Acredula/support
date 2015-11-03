@@ -1,17 +1,17 @@
-# Hms Support
+# Acredula\Support
 
 Support package providing commonly used packages via service providers and inflectors.
 
-All ServiceProviders require [league/container 2](https://packagist.org/packages/league/container#2.0.3).
+All Service Providers require [league/container](https://packagist.org/packages/league/container#2.0.3) >=2.0.3.
 
 ### ConfigServiceProvider
 
 ```
-use Hms\Support\ServiceProvider\ConfigServiceProvider;
+use Acredula\Support\ServiceProvider\ConfigServiceProvider;
 
 $container->addServiceProvider(new ConfigServiceProvider([
     'path' => __DIR__ . '/../config/config.php',
-    'env' => __DIR__ . '/../.env'
+    'env'  => __DIR__ . '/../.env'
 ]));
 ```
 
@@ -23,7 +23,7 @@ $container->addServiceProvider(new ConfigServiceProvider([
 ### AuraSqlServiceProvider
 
 ```
-use Hms\Support\ServiceProvider\AuraSqlServiceProvider;
+use Acredula\Support\ServiceProvider\AuraSqlServiceProvider;
 
 $container->addServiceProvider(new AuraSqlServiceProvider('mysql'));
 ```
@@ -45,7 +45,7 @@ DATABASE_PASS={{ password }}
 ### SwiftMailerServiceProvider
 
 ```
-use Hms\Support\ServiceProvider\SwiftMailerServiceProvider;
+use Acredula\Support\ServiceProvider\SwiftMailerServiceProvider;
 
 $container->addServiceProvider(new SwiftMailerServiceProvider);
 ```
@@ -58,7 +58,7 @@ $container->addServiceProvider(new SwiftMailerServiceProvider);
 ### TwigServiceProvider
 
 ```
-use Hms\Support\ServiceProvider\TwigServiceProvider;
+use Acredula\Support\ServiceProvider\TwigServiceProvider;
 
 $container->addServiceProvider(new TwigServiceProvider([
     'templates'  => __DIR__ . '/../templates',
@@ -77,7 +77,7 @@ $container->addServiceProvider(new TwigServiceProvider([
 ### AuraSessionServiceProvider
 
 ```
-use Hms\Support\ServiceProvider\AuraSessionServiceProvider;
+use Acredula\Support\ServiceProvider\AuraSessionServiceProvider;
 
 $container->addServiceProvider(new AuraSessionServiceProvider);
 ```

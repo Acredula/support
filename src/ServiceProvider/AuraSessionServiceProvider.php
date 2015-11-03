@@ -1,6 +1,6 @@
 <?php
 
-namespace Hms\Support\ServiceProvider;
+namespace Acredula\Support\ServiceProvider;
 
 use Aura\Session\SessionFactory;
 use League\Container\ServiceProvider\AbstractServiceProvider;
@@ -21,7 +21,7 @@ class AuraSessionServiceProvider extends AbstractServiceProvider implements Boot
     public function boot()
     {
         $this->getContainer()
-             ->inflector('Hms\Support\Contract\AuraSessionAwareInterface')
+             ->inflector('Acredula\Support\Contract\AuraSessionAwareInterface')
              ->invokeMethod('setSessionDriver', ['Aura\Session\SessionFactory']);
     }
 
