@@ -9,7 +9,7 @@ All Service Providers require [league/container](https://packagist.org/packages/
 
 ### ConfigServiceProvider
 
-```
+```php
 use Acredula\Support\ServiceProvider\ConfigServiceProvider;
 
 $container->addServiceProvider(new ConfigServiceProvider([
@@ -25,7 +25,7 @@ $container->addServiceProvider(new ConfigServiceProvider([
 
 ### AuraSqlServiceProvider
 
-```
+```php
 use Acredula\Support\ServiceProvider\AuraSqlServiceProvider;
 
 $container->addServiceProvider(new AuraSqlServiceProvider('mysql'));
@@ -47,7 +47,7 @@ DATABASE_PASS={{ password }}
 
 ### SwiftMailerServiceProvider
 
-```
+```php
 use Acredula\Support\ServiceProvider\SwiftMailerServiceProvider;
 
 $container->addServiceProvider(new SwiftMailerServiceProvider);
@@ -60,7 +60,7 @@ $container->addServiceProvider(new SwiftMailerServiceProvider);
 
 ### TwigServiceProvider
 
-```
+```php
 use Acredula\Support\ServiceProvider\TwigServiceProvider;
 
 $container->addServiceProvider(new TwigServiceProvider([
@@ -79,7 +79,7 @@ $container->addServiceProvider(new TwigServiceProvider([
 
 ### AuraSessionServiceProvider
 
-```
+```php
 use Acredula\Support\ServiceProvider\AuraSessionServiceProvider;
 
 $container->addServiceProvider(new AuraSessionServiceProvider);
