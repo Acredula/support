@@ -77,9 +77,9 @@ class TwigServiceProvider extends AbstractServiceProvider implements BootableSer
         $added = [];
 
         foreach ($extensions as $extension) {
-            $alias = is_string($extension) ? $extension : get_class($extension);
+            $alias = (is_string($extension)) ? $extension : get_class($extension);
 
-            $this->getContainer()->add($alias);
+            $this->getContainer()->add($alias, $extension);
             $added[] = $alias;
         }
 
