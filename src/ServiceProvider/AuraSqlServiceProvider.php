@@ -55,7 +55,7 @@ class AuraSqlServiceProvider extends AbstractServiceProvider implements Bootable
         $this->getContainer()->share('Aura\Sql\ExtendedPdo', function() use ($config) {
             $extendedPdo = new ExtendedPdo(
                 sprintf(
-                    'mysql:host=%s;dbname=%s',
+                    'mysql:host=%s;dbname=%s;charset=utf8',
                     $config->get('env.database.host'),
                     $config->get('env.database.name')
                 ),
