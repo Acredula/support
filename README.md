@@ -1,7 +1,7 @@
 # Acredula\Support
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![Total Downloads](https://img.shields.io/packagist/dt/acredula/support.svg?style=flat-square)](https://packagist.org/packages/acredula/support)
+[![Total Downloads](https://img.shields.io/packagist/dt/hmsweb/support.svg?style=flat-square)](https://packagist.org/packages/hmsweb/support)
 
 Support package providing commonly used packages via service providers and inflectors.
 
