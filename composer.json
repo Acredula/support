@@ -1,5 +1,5 @@
 {
-    "name": "acredula/support",
+    "name": "hmsweb/support",
     "description": "Support package providing commonly used packages via service providers and inflectors.",
     "license": "MIT",
     "require": {
